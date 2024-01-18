@@ -14,10 +14,10 @@ except:
         python = "python"
     except:
         print("Failed to check for Python3, Exiting!")
-        exit()
+        sys.exit(1)
     if not python:
         print("Failed to check for Python3, Exiting!")
-        exit()
+        sys.exit(1)
 if not "3" in f"{version}":
     print("Python3 not found")
     exit()

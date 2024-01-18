@@ -28,8 +28,6 @@ if mode.lower() == "online":
     print(auth)
 
 minecraft_directory = minecraft_launcher_lib.utils.get_minecraft_directory()
-latest_version = minecraft_launcher_lib.utils.get_latest_version()["release"]
-minecraft_launcher_lib.install.install_minecraft_version(latest_version, minecraft_directory)
 
 # Username
 
@@ -67,11 +65,18 @@ options = {
     "uuid": uuid,
     "token": token
 }
+mcpass = False
+while not mcpass == True:
+    try:
+        version = input("Version: ")
+        minecraft_launcher_lib.install.install_minecraft_version(version, minecraft_directory)
+        minecraft_command = minecraft_launcher_lib.command.get_minecraft_command(version, minecraft_directory, options)
+        mcpass = True
+    except:
+        print("Failed to get version, Try again!")
 if 1==1:
-    print(f"Starting Minecraft with options: {options}")
+    print(f"Starting Minecraft with options: {options}, Version: {version}")
 else:
     print("Starting Minecraft")
-minecraft_command = minecraft_launcher_lib.command.get_minecraft_command(latest_version, minecraft_directory, options)
 
-# Start Minecraft
 subprocess.run(minecraft_command)
