@@ -1,4 +1,4 @@
-import argparse, time, subprocess, os, sys, tkinter as tk
+import argparse, time, subprocess, os, sys, tkinter as tk, threading, logging
 parser = argparse.ArgumentParser()
 parser.add_argument("-debug", action='store_true', help='Debug mode')
 parser.add_argument("-terminal", action='store_true', help='Disable windows and depends fully on terminal')

@@ -97,9 +97,20 @@ else:
 if mcpass == True:
     print(f"Starting Minecraft with options: {options}, Version: {version}")
     if not args.terminal:
-        root.withdraw()
-    subprocess.run(minecraft_command)
-    shutil.rmtree('logs')
-    shutil.rmtree('__pycache__')
+        process = subprocess.Popen(minecraft_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+        for line in iter(process.stdout.readline, ''):
+            logging.info(line)
+        process.stdout.close()
+        process.wait()
+    else:
+        subprocess.run(minecraft_command)
+    try:
+        shutil.rmtree('logs')
+        shutil.rmtree('__pycache__')
+    except:
+        if not args.terminal:
+            root.destroy()
     if not args.terminal:
         root.destroy()
+    sys.exit(1)
+play_button.config(state=tk.NORMAL)
