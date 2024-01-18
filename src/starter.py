@@ -10,3 +10,5 @@ if not args.terminal:
     root.mainloop()
 else:
     print("Terminal mode.")
+    mode = 'offline'
+    exec(compile(open('minecraft.py').read(), 'minecraft.py', 'exec'))
