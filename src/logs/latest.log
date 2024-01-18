@@ -1,8 +1,8 @@
-[11:08:04] [Datafixer Bootstrap/INFO]: 198 Datafixer optimizations took 145 milliseconds
-[11:08:05] [Render thread/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[11:08:05] [Render thread/INFO]: Setting user: endernah_
-[11:08:05] [Render thread/INFO]: Backend library: LWJGL version 3.3.2+13
-[11:08:06] [Download-2/ERROR]: Failed to fetch user properties
+[11:26:06] [Datafixer Bootstrap/INFO]: 198 Datafixer optimizations took 102 milliseconds
+[11:26:07] [Render thread/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[11:26:07] [Render thread/INFO]: Setting user: endernah_
+[11:26:07] [Render thread/INFO]: Backend library: LWJGL version 3.3.2+13
+[11:26:08] [Download-2/ERROR]: Failed to fetch user properties
 com.mojang.authlib.exceptions.InvalidCredentialsException: Status: 401
 	at com.mojang.authlib.exceptions.MinecraftClientHttpException.toAuthenticationException(MinecraftClientHttpException.java:59) ~[authlib-6.0.52.jar:?]
 	at com.mojang.authlib.yggdrasil.YggdrasilUserApiService.fetchProperties(YggdrasilUserApiService.java:150) ~[authlib-6.0.52.jar:?]
@@ -16,8 +16,9 @@ Caused by: com.mojang.authlib.exceptions.MinecraftClientHttpException: Status: 4
 	at com.mojang.authlib.minecraft.client.MinecraftClient.get(MinecraftClient.java:57) ~[authlib-6.0.52.jar:?]
 	at com.mojang.authlib.yggdrasil.YggdrasilUserApiService.fetchProperties(YggdrasilUserApiService.java:121) ~[authlib-6.0.52.jar:?]
 	... 5 more
-[11:08:06] [Render thread/INFO]: Reloading ResourceManager: vanilla
-[11:08:06] [Worker-Main-3/ERROR]: Failed to retrieve profile key pair
+[11:26:08] [Render thread/INFO]: Reloading ResourceManager: vanilla
+[11:26:08] [Worker-Main-2/INFO]: Found unifont_all_no_pua-15.1.04.hex, loading
+[11:26:08] [Worker-Main-3/ERROR]: Failed to retrieve profile key pair
 com.mojang.authlib.exceptions.MinecraftClientHttpException: Status: 401
 	at com.mojang.authlib.minecraft.client.MinecraftClient.readInputStream(MinecraftClient.java:100) ~[authlib-6.0.52.jar:?]
 	at com.mojang.authlib.minecraft.client.MinecraftClient.post(MinecraftClient.java:65) ~[authlib-6.0.52.jar:?]
@@ -31,26 +32,25 @@ com.mojang.authlib.exceptions.MinecraftClientHttpException: Status: 401
 	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655) ~[?:?]
 	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622) ~[?:?]
 	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165) ~[?:?]
-[11:08:06] [Worker-Main-9/INFO]: Found unifont_all_no_pua-15.1.04.hex, loading
-[11:08:08] [Render thread/WARN]: Missing sound for event: minecraft:item.goat_horn.play
-[11:08:08] [Render thread/WARN]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
-[11:08:08] [Render thread/INFO]: OpenAL initialized on device OpenAL Soft on Headphones (  (deyvi nin kulakl???)
-[11:08:08] [Render thread/INFO]: Sound engine started
-[11:08:08] [Render thread/INFO]: Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
-[11:08:08] [Render thread/INFO]: Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
-[11:08:08] [Render thread/INFO]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
-[11:08:08] [Render thread/INFO]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
-[11:08:08] [Render thread/INFO]: Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
-[11:08:08] [Render thread/INFO]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
-[11:08:08] [Render thread/INFO]: Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
-[11:08:08] [Render thread/INFO]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
-[11:08:08] [Render thread/INFO]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
-[11:08:08] [Render thread/WARN]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
-[11:08:08] [Render thread/INFO]: Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
-[11:08:08] [Render thread/INFO]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
-[11:08:08] [Render thread/INFO]: Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
-[11:08:08] [Render thread/INFO]: Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas
-[11:08:09] [IO-Worker-1/ERROR]: Couldn't connect to realms
+[11:26:09] [Render thread/WARN]: Missing sound for event: minecraft:item.goat_horn.play
+[11:26:09] [Render thread/WARN]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[11:26:09] [Render thread/INFO]: OpenAL initialized on device OpenAL Soft on Headphones (  (deyvi nin kulakl???)
+[11:26:09] [Render thread/INFO]: Sound engine started
+[11:26:10] [Render thread/INFO]: Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
+[11:26:10] [Render thread/INFO]: Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
+[11:26:10] [Render thread/INFO]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[11:26:10] [Render thread/INFO]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[11:26:10] [Render thread/INFO]: Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
+[11:26:10] [Render thread/INFO]: Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
+[11:26:10] [Render thread/INFO]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[11:26:10] [Render thread/INFO]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[11:26:10] [Render thread/INFO]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[11:26:10] [Render thread/WARN]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
+[11:26:10] [Render thread/INFO]: Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
+[11:26:10] [Render thread/INFO]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
+[11:26:10] [Render thread/INFO]: Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[11:26:10] [Render thread/INFO]: Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas
+[11:26:10] [IO-Worker-1/ERROR]: Couldn't connect to realms
 ese: Realms service error (400) with no payload
 	at eqr.a(SourceFile:451) ~[1.20.4.jar:?]
 	at eqr.g(SourceFile:232) ~[1.20.4.jar:?]
@@ -59,4 +59,59 @@ ese: Realms service error (400) with no payload
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
 	at java.lang.Thread.run(Thread.java:833) ~[?:?]
-[11:08:11] [Render thread/INFO]: Stopping!
+[11:26:36] [Server Pinger #1/ERROR]: Can't ping doruk.deyvi.info: Unknown host
+[11:26:37] [Render thread/ERROR]: Can't ping hideandseek999.aternos.me:16896: Internal Exception: java.net.SocketException: Connection reset
+[11:26:40] [Render thread/INFO]: Connecting to hd.mineland.net, 25565
+[11:26:40] [Worker-Main-13/ERROR]: Failed to retrieve profile key pair
+com.mojang.authlib.exceptions.MinecraftClientHttpException: Status: 401
+	at com.mojang.authlib.minecraft.client.MinecraftClient.readInputStream(MinecraftClient.java:100) ~[authlib-6.0.52.jar:?]
+	at com.mojang.authlib.minecraft.client.MinecraftClient.post(MinecraftClient.java:65) ~[authlib-6.0.52.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilUserApiService.getKeyPair(YggdrasilUserApiService.java:61) ~[authlib-6.0.52.jar:?]
+	at fnl.a(SourceFile:130) ~[1.20.4.jar:?]
+	at fnl.b(SourceFile:79) ~[1.20.4.jar:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760) ~[?:?]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373) ~[?:?]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622) ~[?:?]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165) ~[?:?]
+[11:26:45] [Render thread/INFO]: [System] [CHAT] \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n
+[11:26:45] [Render thread/INFO]: [System] [CHAT] Authorization » Register - /reg [password] [repeat password]
+[11:26:52] [Render thread/INFO]: [System] [CHAT] Authorization » Register - /reg [password] [repeat password]
+[11:26:57] [Render thread/INFO]: [System] [CHAT] \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n
+[11:26:57] [Render thread/INFO]: [System] [CHAT] Authorization » You have successfully registered.
+[11:26:58] [Render thread/INFO]: [System] [CHAT] 
+[11:26:58] [Render thread/INFO]: [System] [CHAT]  
+[11:26:58] [Render thread/INFO]: [System] [CHAT]  
+[11:26:58] [Render thread/INFO]: [System] [CHAT]  
+[11:26:58] [Render thread/INFO]: [System] [CHAT]  
+[11:26:58] [Render thread/INFO]: [System] [CHAT]  
+[11:26:58] [Render thread/INFO]: [System] [CHAT]  
+[11:26:58] [Render thread/INFO]: [System] [CHAT]  
+[11:26:58] [Render thread/INFO]: [System] [CHAT]  
+[11:26:58] [Render thread/INFO]: [System] [CHAT]  
+[11:26:58] [Render thread/INFO]: [System] [CHAT]  
+[11:26:58] [Render thread/INFO]: [System] [CHAT]  
+[11:26:58] [Render thread/INFO]: [System] [CHAT]  
+[11:26:58] [Render thread/INFO]: [System] [CHAT]  
+[11:26:58] [Render thread/INFO]: [System] [CHAT]  
+[11:26:58] [Render thread/INFO]: [System] [CHAT]  
+[11:26:58] [Render thread/INFO]: [System] [CHAT]  
+[11:26:58] [Render thread/INFO]: [System] [CHAT]  
+[11:26:58] [Render thread/INFO]: [System] [CHAT]  
+[11:26:58] [Render thread/INFO]: [System] [CHAT]  
+[11:26:58] [Render thread/INFO]: [System] [CHAT]  
+[11:26:58] [Render thread/INFO]: [System] [CHAT]  
+[11:26:58] [Render thread/INFO]: [System] [CHAT]  
+[11:26:58] [Render thread/INFO]: [System] [CHAT]  
+[11:26:58] [Render thread/INFO]: [System] [CHAT]  
+[11:26:58] [Render thread/INFO]: [System] [CHAT]  
+[11:26:58] [Render thread/INFO]: [System] [CHAT] -----------------------------------------------------\n     Welcome to Mineland Network\n\n ? Have fun with our unique Servers! - /servers\n ? Feeling alone? Invite your Friends! - /party\n ? Treat yourself with Luxury! - /ranks\n ? Find us out in more Platforms! - /site\n \n [Facebook] - [Discord] - [Forum]\n-----------------------------------------------------
+[11:27:00] [Render thread/INFO]: [System] [CHAT] System » Your language set to English.\n You can change it in settings - /lang
+[11:27:03] [Render thread/INFO]: [System] [CHAT] ?????????????????????????????\n            CONGRATULATIONS!\nxlebYPA_1030 just bought rank YouTube\nCongratulate them on the purchase!\nWanna be like them? ? store.mineland.net\n   \n?????????????????????????????
+[11:27:35] [Render thread/INFO]: [System] [CHAT]  \n | Legend CatNyushka5555 just voted for Mineland!\n | The TOP 1 voter of the month will be awarded with a\n | Minecraft license key. \n   \n                   [Vote now]\n 
+[11:27:36] [Render thread/WARN]: Ignoring player info update for unknown player 87edb5ac-e3fd-3d88-b65a-b75853e640dc ([UPDATE_GAME_MODE])
+[11:27:49] [Render thread/WARN]: Ignoring player info update for unknown player aaee3a95-33c0-3116-b837-4c7665e554ae ([UPDATE_GAME_MODE])
+[11:27:50] [Server Pinger #4/ERROR]: Can't ping doruk.deyvi.info: Unknown host
+[11:27:51] [Render thread/INFO]: Stopping!
