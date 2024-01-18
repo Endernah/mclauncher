@@ -4,8 +4,9 @@ if args.debug:
 else:
     debug = "> /dev/null 2>&1"
 print("Installing dependencies")
-import os, sys
-if not "3" in f"{sys.version}":
+import os, sys, subprocess
+version = subprocess.check_output(['python3', '--version'], text=True)
+if not "3" in f"{version}":
     print("Python 3 not found")
     exit()
 try:
