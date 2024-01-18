@@ -1,6 +1,3 @@
-import main
-args = main.args
-
 if not args.terminal:
     import tkinter as tk
     def print_hello():
@@ -11,3 +8,5 @@ if not args.terminal:
     button.pack()
 
     root.mainloop()
+else:
+    print("Terminal mode.")

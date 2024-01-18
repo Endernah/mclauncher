@@ -1,5 +1,3 @@
-import main
-args = main.args
 if args.debug:
     print("Debug mode enabled")
     debug = ""
