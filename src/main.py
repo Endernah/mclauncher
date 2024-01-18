@@ -5,7 +5,7 @@ parser.add_argument("-terminal", action='store_true', help='Disable windows and 
 parser.add_argument("-version", action='store_true', help='Shows the version of the launcher.')
 args = parser.parse_args()
 if args.version:
-    print("Version: 0.0.1")
+    print("Version: 0.0.1-Alpha")
     exit()
 exec(compile(open('dependency_installer.py').read(), 'dependency_installer.py', 'exec'))
 print("Starting...")

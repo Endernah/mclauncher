@@ -4,12 +4,16 @@ if not args.terminal:
     print("Loading GUI.")
 
     def minecraft():
-        root.withdraw()
         global version, username
         version = version_entry.get()
         username = name_entry.get()
+        if username == "" or username == None:
+            print("Username not specified!")
+            return
+        if version == "" or version == None:
+            print("Version not specified!")
+            return
         exec(compile(open('minecraft.py').read(), 'minecraft.py', 'exec'))
-        root.destroy()
 
     root = tk.Tk()
     root.title("Endernah/mclauncher")

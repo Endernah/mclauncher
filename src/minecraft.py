@@ -1,4 +1,4 @@
-import minecraft_launcher_lib, uuid
+import minecraft_launcher_lib, uuid, shutil
 
 minecraft_directory = minecraft_launcher_lib.utils.get_minecraft_directory()
 
@@ -82,6 +82,7 @@ if not args.terminal:
     try:
         minecraft_launcher_lib.install.install_minecraft_version(version, minecraft_directory)
         minecraft_command = minecraft_launcher_lib.command.get_minecraft_command(version, minecraft_directory, options)
+        mcpass = True
     except:
         print("Failed to get version, Try again!")
 else:
@@ -93,9 +94,12 @@ else:
             mcpass = True
         except:
             print("Failed to get version, Try again!")
-if 1==1:
+if mcpass == True:
     print(f"Starting Minecraft with options: {options}, Version: {version}")
-else:
-    print("Starting Minecraft")
-
-subprocess.run(minecraft_command)
+    if not args.terminal:
+        root.withdraw()
+    subprocess.run(minecraft_command)
+    shutil.rmtree('logs')
+    shutil.rmtree('__pycache__')
+    if not args.terminal:
+        root.destroy()
