@@ -23,6 +23,7 @@ try:
     os.system(f"python3 -m pip install --upgrade pip {debug}")
     os.system(f"python3 -m pip install wget {debug}")
     os.system(f"python3 -m pip install requests {debug}")
+    os.system(f"python3 -m pip install minecraft-launcher-lib {debug}")
 except:
     print("Failed to install dependencies, Exiting!")
     exit()
