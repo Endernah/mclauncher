@@ -1,9 +1,8 @@
 if args.debug:
     print("Debug mode enabled")
-    debug = ""
+    debug = None
 else:
-    debug = "> /dev/null 2>&1"
-import os, sys, subprocess
+    debug = subprocess.DEVNULL
 print("Checking for Python3")
 try:
     version = subprocess.check_output(['python3', '--version'], text=True)
@@ -20,7 +19,7 @@ except:
         sys.exit(1)
 if not "3" in f"{version}":
     print("Python3 not found")
-    exit()
+    sys.exit(1)
 else:
     if args.debug:
         print(f"Python3 found: {version}")
@@ -28,10 +27,10 @@ else:
         print("Python3 found")
 print("Installing dependencies")
 try:
-    os.system(f"{python} -m pip install --upgrade pip {debug}")
-    os.system(f"{python} -m pip install wget {debug}")
-    os.system(f"{python} -m pip install requests {debug}")
-    os.system(f"{python} -m pip install minecraft-launcher-lib {debug}")
+    subprocess.run([python, "-m", "pip", "install", "--upgrade", "pip"], stdout=debug, stderr=debug)
+    subprocess.run([python, "-m", "pip", "install", "wget"], stdout=debug, stderr=debug)
+    subprocess.run([python, "-m", "pip", "install", "requests"], stdout=debug, stderr=debug)
+    subprocess.run([python, "-m", "pip", "install", "minecraft-launcher-lib"], stdout=debug, stderr=debug)
 except:
     print("Failed to install dependencies, Exiting!")
-    exit()
+    sys.exit(1)

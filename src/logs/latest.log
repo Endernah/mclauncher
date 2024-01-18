@@ -1,0 +1,46 @@
+[13:50:52] [Client thread/INFO]: Setting user: endernah_
+[13:50:53] [Client thread/WARN]: Skipping bad option: key_key.pickItem:key.mouse.middle
+[13:50:53] [Client thread/WARN]: Skipping bad option: key_key.playerlist:key.keyboard.tab
+[13:50:53] [Client thread/WARN]: Skipping bad option: key_key.advancements:key.keyboard.l
+[13:50:53] [Client thread/WARN]: Skipping bad option: key_key.hotbar.5:key.keyboard.5
+[13:50:53] [Client thread/WARN]: Skipping bad option: key_key.hotbar.6:key.keyboard.6
+[13:50:53] [Client thread/WARN]: Skipping bad option: key_key.hotbar.7:key.keyboard.7
+[13:50:53] [Client thread/WARN]: Skipping bad option: key_key.hotbar.8:key.keyboard.8
+[13:50:53] [Client thread/WARN]: Skipping bad option: key_key.hotbar.1:key.keyboard.q
+[13:50:53] [Client thread/WARN]: Skipping bad option: key_key.hotbar.2:key.keyboard.f
+[13:50:53] [Client thread/WARN]: Skipping bad option: key_key.hotbar.3:key.keyboard.3
+[13:50:53] [Client thread/WARN]: Skipping bad option: key_key.hotbar.4:key.keyboard.4
+[13:50:53] [Client thread/WARN]: Skipping bad option: key_key.sprint:key.keyboard.home
+[13:50:53] [Client thread/WARN]: Skipping bad option: key_key.forward:key.keyboard.w
+[13:50:53] [Client thread/WARN]: Skipping bad option: key_key.drop:key.keyboard.g
+[13:50:53] [Client thread/WARN]: Skipping bad option: key_key.back:key.keyboard.s
+[13:50:53] [Client thread/WARN]: Skipping bad option: key_key.attack:key.mouse.left
+[13:50:53] [Client thread/WARN]: Skipping bad option: key_key.use:key.mouse.right
+[13:50:53] [Client thread/WARN]: Skipping bad option: key_key.saveToolbarActivator:key.keyboard.c
+[13:50:53] [Client thread/WARN]: Skipping bad option: key_key.smoothCamera:key.keyboard.unknown
+[13:50:53] [Client thread/WARN]: Skipping bad option: key_key.right:key.keyboard.d
+[13:50:53] [Client thread/WARN]: Skipping bad option: key_key.jump:key.keyboard.space
+[13:50:53] [Client thread/WARN]: Skipping bad option: key_key.sneak:key.keyboard.left.shift
+[13:50:53] [Client thread/WARN]: Skipping bad option: key_key.spectatorOutlines:key.keyboard.unknown
+[13:50:53] [Client thread/WARN]: Skipping bad option: key_key.left:key.keyboard.a
+[13:50:53] [Client thread/WARN]: Skipping bad option: key_key.command:key.keyboard.slash
+[13:50:53] [Client thread/WARN]: Skipping bad option: key_key.screenshot:key.keyboard.f2
+[13:50:53] [Client thread/WARN]: Skipping bad option: key_key.hotbar.9:key.keyboard.9
+[13:50:53] [Client thread/WARN]: Skipping bad option: key_key.togglePerspective:key.keyboard.f5
+[13:50:53] [Client thread/WARN]: Skipping bad option: key_key.chat:key.keyboard.t
+[13:50:53] [Client thread/WARN]: Skipping bad option: key_key.inventory:key.keyboard.e
+[13:50:53] [Client thread/WARN]: Skipping bad option: key_key.fullscreen:key.keyboard.f11
+[13:50:53] [Client thread/WARN]: Skipping bad option: key_key.loadToolbarActivator:key.keyboard.x
+[13:50:53] [Client thread/INFO]: LWJGL Version: 2.9.4
+[13:50:53] [Client thread/INFO]: Reloading ResourceManager: Default
+[13:50:54] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[13:50:54] [Thread-3/INFO]: Initializing LWJGL OpenAL
+[13:50:54] [Thread-3/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[13:50:54] [Thread-3/INFO]: OpenAL initialized.
+[13:50:54] [Sound Library Loader/INFO]: Sound engine started
+[13:50:56] [Client thread/INFO]: Created: 1024x512 textures-atlas
+[13:50:57] [Client thread/INFO]: Narrator library for x64 successfully loaded
+[13:50:58] [Realms Notification Availability checker #1/ERROR]: Realms error code: 400 message: 
+[13:51:29] [Client thread/INFO]: Stopping!
+[13:51:29] [Client thread/INFO]: SoundSystem shutting down...
+[13:51:30] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com

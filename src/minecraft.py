@@ -1,4 +1,6 @@
-import minecraft_launcher_lib, subprocess, uuid
+import minecraft_launcher_lib, uuid
+
+minecraft_directory = minecraft_launcher_lib.utils.get_minecraft_directory()
 
 # Auth
 
@@ -27,20 +29,30 @@ if mode.lower() == "online":
         sys.exit(1)
     print(auth)
 
-minecraft_directory = minecraft_launcher_lib.utils.get_minecraft_directory()
-
 # Username
 
 try:
     if auth["name"]:
         username = auth["name"]
     else:
+        try:
+            if not username:
+                while username == None or username == "":
+                    username = input("Username: ")
+        except:
+            username = input("Username: ")
+            while username == None or username == "":
+                username = input("Username: ")
+except:
+    try:
+        if not username:
+            username = input("Username: ")
+            while username == None or username == "":
+                username = input("Username: ")
+    except:
+        username = input("Username: ")
         while username == None or username == "":
             username = input("Username: ")
-except:
-    username = input("Username: ")
-    while username == None or username == "":
-        username = input("Username: ")
 
 # Uuid
 try:
@@ -66,14 +78,21 @@ options = {
     "token": token
 }
 mcpass = False
-while not mcpass == True:
+if not args.terminal:
     try:
-        version = input("Version: ")
         minecraft_launcher_lib.install.install_minecraft_version(version, minecraft_directory)
         minecraft_command = minecraft_launcher_lib.command.get_minecraft_command(version, minecraft_directory, options)
-        mcpass = True
     except:
         print("Failed to get version, Try again!")
+else:
+    while not mcpass == True:
+        try:
+            version = input("Version: ")
+            minecraft_launcher_lib.install.install_minecraft_version(version, minecraft_directory)
+            minecraft_command = minecraft_launcher_lib.command.get_minecraft_command(version, minecraft_directory, options)
+            mcpass = True
+        except:
+            print("Failed to get version, Try again!")
 if 1==1:
     print(f"Starting Minecraft with options: {options}, Version: {version}")
 else:
